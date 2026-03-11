@@ -1,0 +1,30 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.items {
+    background-color: blue;
+    padding: 2em;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}

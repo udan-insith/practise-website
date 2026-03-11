@@ -14,10 +14,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .box {
-    background: #142d4a;
     height: 200px;
     aspect-ratio: 1/1;
     border-radius: 10px;
@@ -27,6 +27,17 @@ body {
     justify-content: center;
 }
 
+.box-container:first-child .box{
+    background: #09205e;
+}
+
+.box-container:nth-child(2) .box{
+    background: #040e68;
+}
+
+.box-container:nth-child(3) .box{
+    background: #000658;
+}
 /* CUSTOM PROPERTY */
 @property --deg {
     syntax: '<angle>';
@@ -61,4 +72,11 @@ body {
     to {
         --deg: 360deg;
     }
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
