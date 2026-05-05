@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+
+/* BASIC RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f6f2ea;
+
+  --secondary-clr-1: #c29b87;
+
+  --accents-clr-1: #a97954;
+
+  --btn-clr-1: #1e423f;
+
+  --header-clr-1: #532c2e;
+
+  --border-clr-1: #c29b87;
+
+  --f-clr-1: #2a2320;
+
+  --ff-1: "Montserrat", sans-serif;
+  --ff-2: "Playfair Display", sans-serif;
+  --ff-3: "EB Garmond", sans-serif;
+}
+
+/* BODY STYLING */
+body {
+  background: var(--bg-color);
+  font-family: var(--ff-1);
+}
