@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:regular,500,600,700,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Macondo:regular);
 
 /* BASIC RESET */
 *,
@@ -12,6 +14,7 @@
 }
 
 :root {
+  /* BASIC COLORS */
   --bg-color: #f6f2ea;
 
   --secondary-clr-1: #c29b87;
@@ -24,15 +27,30 @@
 
   --border-clr-1: #c29b87;
 
+  /* FONTS STYLES */
   --f-clr-1: #2a2320;
 
   --ff-1: "Montserrat", sans-serif;
   --ff-2: "Playfair Display", sans-serif;
   --ff-3: "EB Garmond", sans-serif;
+  --ff-4: "Libre Baskerville", sans-serif;
+  --ff-5: "Macondo", sans-serif;
+
+  --fz-1: 2rem;
+  --fz-2: ;
+  --fz-3: ;
+  --fz-4: ;
+  --fz-5: ;
 }
 
 /* BODY STYLING */
 body {
   background: var(--bg-color);
-  font-family: var(--ff-1);
+  font-family: var(--ff-5);
+}
+
+.nav-links {
+  font-size: var(--fz-1);
+  text-decoration: none;
+  color: var(--f-clr-1);
 }
