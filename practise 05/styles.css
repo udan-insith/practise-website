@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.menu-icon-1,
+.menu-icon-2 {
+  width: 70px;
+  height: 10px;
+  position: relative;
+  margin-top: 250px;
+}
+
+.menu-icon-1::after,
+.menu-icon-1::before,
+.menu-icon-2::after,
+.menu-icon-2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  transition: opacity 250ms ease-in-out;
+}
+
+.menu-icon-1::after {
+  top: 0;
+  right: 0;
+}
+
+.menu-icon-1::before {
+  bottom: 0;
+  left: 0;
+}
+.menu-icon-2::after {
+  bottom: 17.2rem;
+  right: 0;
+}
+
+.menu-icon-2::before {
+  bottom: 15.8rem;
+  left: 0;
+}
+
+.navbar:hover .menu-icon-1::after,
+.navbar:hover .menu-icon-1::before {
+  opacity: 0;
+}
+
+.navbar:hover .menu-icon-2::after {
+  animation-name: hamburger-rotate-1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hamburger-rotate-1 {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(25deg);
+  }
+  100% {
+    transform: rotateZ(45deg);
+  }
+}
